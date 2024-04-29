@@ -11,6 +11,7 @@
   },
   "scripts": {
     "compile": "shadow-cljs compile app",
+    "release": "shadow-cljs release app",
     "watch": "shadow-cljs watch app"
   }
 }
