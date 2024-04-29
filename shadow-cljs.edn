@@ -1,5 +1,6 @@
 ;; shadow-cljs configuration
 {:source-paths ["src/dev" "src/main" "src/test"],
  ; :deps true
+ :dev-http {8080 "public"},
  :dependencies [[reagent "1.2.0"]],
- :builds {}}
+ :builds {:app {:modules {:main {:init-fn demo.app/init}}, :target :browser}}}
